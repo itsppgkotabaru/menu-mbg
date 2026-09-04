@@ -1,101 +1,185 @@
-*{box-sizing:border-box}
-:root{
-  --blue:#143e91;
-  --blue-dark:#0c2d70;
-  --gold:#e9c55b;
-  --white:#fff;
+```css
+/* ================================
+   INFORMASI MENU MBG
+   ================================ */
+
+.info-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  margin: 25px 0;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+  border: 1px solid #e5eaf2;
 }
-html,body{margin:0;min-height:100%;background:#071a42}
-body{font-family:Arial,Helvetica,sans-serif;color:#fff;display:flex;justify-content:center}
-.page{
-  width:100%;
-  max-width:480px;
-  min-height:100vh;
-  background:linear-gradient(180deg,var(--blue) 0%,var(--blue) 42%,var(--blue-dark) 100%);
-  overflow:hidden;
+
+/* Judul bagian */
+.section-title {
+  color: #163f91;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #d4af37;
 }
-.top{
-  padding:20px 16px 12px;
-  background:var(--blue);
+
+/* ================================
+   WAJIB DIPERHATIKAN
+   ================================ */
+
+.warning-card {
+  border-left: 6px solid #d4af37;
 }
-.logos{
-  height:54px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:7px;
-  opacity:.96;
-  margin-bottom:12px;
+
+.warning-title {
+  color: #b07d00;
 }
-.fake-logo{
-  width:38px;height:38px;border-radius:50%;
-  display:grid;place-items:center;
-  border:2px solid #e7d06e;
-  color:#fff;font-size:7px;font-weight:800;
+
+.warning-list {
+  margin: 0;
+  padding-left: 25px;
 }
-.logo1{background:#183b7e}
-.logo2{background:#eee;color:#143e91;border-color:#fff;font-size:25px}
-.logo4{background:#2087c9}
-.logo-text{
-  font-size:6px;line-height:1.15;font-weight:700;
-  max-width:72px;color:#fff;opacity:.88;
+
+.warning-list li {
+  padding: 8px 0;
+  color: #444;
+  line-height: 1.6;
 }
-.slhs{
-  width:53px;height:36px;border-radius:7px;
-  display:grid;place-items:center;
-  color:#f5e13d;background:#63a83c;
-  border:2px solid #e9d95d;font-weight:900;font-size:15px;
+
+/* ================================
+   ISI OMPRANG
+   ================================ */
+
+.food-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-.brand{display:flex;align-items:center;gap:10px}
-.round-mark{
-  width:39px;height:39px;border-radius:50%;
-  border:2px solid rgba(255,255,255,.8);
-  display:grid;place-items:center;font-size:21px;flex:none;
+
+.food-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 14px;
+  background: #f5f8fd;
+  border-radius: 12px;
+  border: 1px solid #e3e9f3;
 }
-.brand-title{font-size:10px;font-weight:800;letter-spacing:.45px}
-.brand-name{font-size:15px;font-weight:800;line-height:1.15;margin-top:2px}
-.brand-sub{font-size:8px;opacity:.75;margin-top:3px}
-.content{padding:0 15px 30px}
-.day{padding:15px 7px 12px}
-.day h1{font-size:28px;line-height:1;margin:0 0 6px;font-weight:800}
-.day div{font-size:11px;opacity:.86}
-.gold-line{height:2px;background:var(--gold);margin:0 7px 9px}
-.menu-frame{
-  background:#fff;
-  border-radius:2px 2px 10px 10px;
-  overflow:hidden;
-  box-shadow:0 8px 24px rgba(0,0,0,.16);
+
+.food-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 50%;
+  font-size: 23px;
+  flex-shrink: 0;
 }
-.menu-photo{
-  width:100%;
-  background:#fff;
-  overflow:hidden;
+
+.food-item span {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 3px;
 }
-.menu-photo img{
-  width:100%;
-  height:455px;
-  display:block;
-  object-fit:cover;
-  object-position:center 45%;
+
+.food-item strong {
+  display: block;
+  color: #163f91;
+  font-size: 16px;
 }
-.menu-caption{
-  color:#17335f;
-  padding:14px 15px 16px;
+
+/* ================================
+   KANDUNGAN GIZI
+   ================================ */
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
 }
-.pill{
-  display:inline-block;
-  font-size:8px;font-weight:800;
-  color:#17428f;background:#e8eefb;
-  border-radius:15px;padding:5px 8px;
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px;
 }
-.menu-caption h2{font-size:17px;margin:9px 0 4px}
-.menu-caption p{font-size:11px;color:#71808b;margin:0}
-footer{
-  padding:0 20px 22px;
-  display:flex;justify-content:space-between;
-  font-size:8px;opacity:.55;
+
+.nutrition-table th {
+  background: #163f91;
+  color: #ffffff;
+  padding: 14px 12px;
+  text-align: center;
+  font-size: 14px;
 }
-@media(min-width:700px){
-  body{padding:25px 0}
-  .page{border-radius:24px;min-height:0}
+
+.nutrition-table th:first-child {
+  text-align: left;
 }
+
+.nutrition-table td {
+  padding: 13px 12px;
+  border-bottom: 1px solid #e2e6ed;
+  text-align: center;
+  color: #444;
+}
+
+.nutrition-table td:first-child {
+  text-align: left;
+  font-weight: 600;
+  color: #163f91;
+}
+
+.nutrition-table tr:nth-child(even) {
+  background: #f5f8fd;
+}
+
+/* ================================
+   MOBILE
+   ================================ */
+
+@media (max-width: 600px) {
+
+  .info-card {
+    padding: 18px 15px;
+    border-radius: 15px;
+    margin: 20px 0;
+  }
+
+  .section-title {
+    font-size: 17px;
+  }
+
+  .warning-list {
+    padding-left: 22px;
+  }
+
+  .warning-list li {
+    font-size: 14px;
+  }
+
+  .food-item {
+    padding: 12px;
+  }
+
+  .food-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .food-item strong {
+    font-size: 14px;
+  }
+
+  .nutrition-table {
+    min-width: 450px;
+  }
+
+  .nutrition-table th,
+  .nutrition-table td {
+    padding: 11px 9px;
+    font-size: 13px;
+  }
+}
+```
