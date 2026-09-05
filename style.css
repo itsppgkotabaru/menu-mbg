@@ -1,555 +1,70 @@
 ```css
 /* =========================================
-   RESET
-   ========================================= */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-
-html {
-  scroll-behavior: smooth;
-}
-
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #eef2f7;
-  color: #222;
-  line-height: 1.5;
-}
-
-
-/* =========================================
-   PAGE
-   ========================================= */
-
-.page {
-  width: 100%;
-  max-width: 900px;
-  min-height: 100vh;
-
-  margin: 0 auto;
-
-  background: #ffffff;
-
-  overflow: hidden;
-}
-
-
-/* =========================================
-   HEADER
-   ========================================= */
-
-header {
-  padding: 22px 25px;
-
-  background: #163f91;
-}
-
-
-.brand {
-  display: flex;
-  align-items: center;
-
-  gap: 15px;
-}
-
-
-.round-mark {
-  width: 58px;
-  height: 58px;
-
-  flex-shrink: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: 2px solid #d4af37;
-  border-radius: 50%;
-
-  color: #d4af37;
-
-  font-size: 31px;
-}
-
-
-.brand-copy {
-  color: #ffffff;
-}
-
-
-.brand-title {
-  font-size: 20px;
-  font-weight: 800;
-  letter-spacing: .5px;
-}
-
-
-.brand-name {
-  margin-top: 3px;
-
-  font-size: 15px;
-  font-weight: 700;
-}
-
-
-.brand-sub {
-  margin-top: 2px;
-
-  color: #dfe7f7;
-
-  font-size: 12px;
-}
-
-
-/* =========================================
-   CONTENT
-   ========================================= */
-
-.content {
-  padding: 25px;
-}
-
-
-/* =========================================
-   DAY
-   ========================================= */
-
-.day {
-  text-align: center;
-}
-
-
-.day h1 {
-  color: #163f91;
-
-  font-size: 34px;
-  line-height: 1.1;
-
-  font-weight: 800;
-}
-
-
-.day div {
-  margin-top: 5px;
-
-  color: #555;
-
-  font-size: 16px;
-}
-
-
-.gold-line {
-  width: 80px;
-  height: 4px;
-
-  margin: 15px auto 25px;
-
-  background: #d4af37;
-
-  border-radius: 10px;
-}
-
-
-/* =========================================
-   MENU FOTO
-   ========================================= */
-
-.menu-frame {
-  overflow: hidden;
-
-  background: #ffffff;
-
-  border: 1px solid #e2e6ec;
-
-  border-radius: 16px;
-
-  box-shadow: 0 5px 18px rgba(0, 0, 0, .07);
-}
-
-
-.menu-photo {
-  width: 100%;
-
-  aspect-ratio: 16 / 9;
-
-  overflow: hidden;
-
-  background: #e9edf3;
-}
-
-
-.menu-photo img {
-  display: block;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-
-  transition: opacity .25s ease;
-}
-
-
-.menu-caption {
-  padding: 20px;
-
-  text-align: center;
-}
-
-
-.pill {
-  display: inline-block;
-
-  padding: 6px 13px;
-
-  background: #163f91;
-
-  color: #ffffff;
-
-  border-radius: 50px;
-
-  font-size: 11px;
-  font-weight: 800;
-
-  letter-spacing: .5px;
-}
-
-
-.menu-caption h2 {
-  margin-top: 10px;
-
-  color: #163f91;
-
-  font-size: 23px;
-}
-
-
-.menu-caption p {
-  margin-top: 5px;
-
-  color: #666;
-
-  font-size: 14px;
-}
-
-
-/* =========================================
-   INFO CARD
-   ========================================= */
-
-.info-card {
-  margin-top: 20px;
-
-  padding: 20px;
-
-  background: #ffffff;
-
-  border: 1px solid #e1e5eb;
-
-  border-radius: 14px;
-
-  box-shadow: 0 3px 12px rgba(0, 0, 0, .04);
-}
-
-
-.section-title {
-  padding-bottom: 12px;
-
-  color: #163f91;
-
-  border-bottom: 2px solid #edf0f4;
-
-  font-size: 16px;
-  font-weight: 800;
-}
-
-
-/* =========================================
-   WARNING
-   ========================================= */
-
-.warning-card {
-  background: #fffaf0;
-
-  border-color: #f0d98c;
-}
-
-
-.warning-title {
-  color: #a26b00;
-
-  border-bottom-color: #f0dfae;
-}
-
-
-.warning-list {
-  margin-top: 15px;
-
-  padding-left: 22px;
-}
-
-
-.warning-list li {
-  margin-bottom: 10px;
-
-  color: #51451f;
-
-  font-size: 14px;
-}
-
-
-.warning-list li:last-child {
-  margin-bottom: 0;
-}
-
-
-/* =========================================
-   FOOD LIST
-   ========================================= */
-
-.food-list {
-  display: grid;
-
-  grid-template-columns: repeat(2, 1fr);
-
-  gap: 12px;
-
-  margin-top: 15px;
-}
-
-
-.food-item {
-  display: flex;
-  align-items: center;
-
-  gap: 12px;
-
-  padding: 13px;
-
-  background: #f7f9fc;
-
-  border: 1px solid #e5e9ef;
-
-  border-radius: 12px;
-}
-
-
-.food-icon {
-  width: 42px;
-  height: 42px;
-
-  flex-shrink: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: #ffffff;
-
-  border-radius: 10px;
-
-  font-size: 23px;
-}
-
-
-.food-item span {
-  display: block;
-
-  color: #777;
-
-  font-size: 11px;
-}
-
-
-.food-item strong {
-  display: block;
-
-  margin-top: 2px;
-
-  color: #163f91;
-
-  font-size: 14px;
-}
-
-
-/* =========================================
-   NUTRITION
-   ========================================= */
-
-.table-wrapper {
-  width: 100%;
-
-  margin-top: 15px;
-
-  overflow-x: auto;
-}
-
-
-.nutrition-table {
-  width: 100%;
-
-  border-collapse: collapse;
-
-  font-size: 13px;
-}
-
-
-.nutrition-table th,
-.nutrition-table td {
-  padding: 11px 10px;
-
-  border: 1px solid #e1e5eb;
-
-  text-align: center;
-}
-
-
-.nutrition-table th {
-  background: #163f91;
-
-  color: #ffffff;
-
-  font-weight: 700;
-}
-
-
-.nutrition-table td:first-child {
-  text-align: left;
-
-  font-weight: 600;
-}
-
-
-.nutrition-table tbody tr:nth-child(even) {
-  background: #f7f9fc;
-}
-
-
-/* =========================================
-   FOOTER
-   ========================================= */
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  gap: 15px;
-
-  padding: 18px 25px;
-
-  background: #163f91;
-
-  color: #ffffff;
-
-  font-size: 11px;
-}
-
-
-footer span:last-child {
-  color: #dfe7f7;
-
-  text-align: right;
-}
-
-
-/* =========================================
-   MENU MINGGU INI
-   ========================================= */
-
-.weekly-menu {
-  padding: 25px;
-
-  background: #f7f9fc;
-
-  border-top: 4px solid #d4af37;
-}
-
-
-.weekly-title {
-  text-align: center;
-
-  color: #163f91;
-
-  font-size: 21px;
-  font-weight: 800;
-}
-
-
-.weekly-subtitle {
-  margin-top: 4px;
-
-  text-align: center;
-
-  color: #777;
-
-  font-size: 13px;
-}
-
-
-/* =========================================
-   TOMBOL HARI
+   TOMBOL MENU MINGGU
    ========================================= */
 
 .weekly-buttons {
   display: grid;
-
   grid-template-columns: repeat(5, 1fr);
-
   gap: 10px;
-
-  margin-top: 18px;
+  margin-top: 20px;
 }
-
 
 .day-button {
   position: relative;
 
-  padding: 15px 8px;
+  padding: 14px 8px 10px;
 
   background: #ffffff;
-
   border: 1px solid #dfe4eb;
-
   border-radius: 12px;
 
   cursor: pointer;
-
   text-align: center;
 
   transition: all .2s ease;
 }
 
-
 .day-button strong {
   display: block;
 
+  margin-bottom: 10px;
+
   color: #163f91;
 
-  font-size: 14px;
-
+  font-size: 15px;
   font-weight: 800;
 }
 
 
+/* =========================================
+   TANGGAL DALAM KOTAK MEMANJANG
+   ========================================= */
+
 .day-button span {
   display: block;
 
-  margin-top: 4px;
+  width: 100%;
 
-  color: #666;
+  padding: 7px 5px;
+
+  background: #f1f4f8;
+
+  color: #555;
+
+  border: 1px solid #e1e6ed;
+  border-radius: 7px;
 
   font-size: 11px;
+  font-weight: 600;
+
+  white-space: nowrap;
 }
 
 
-/* HOVER */
+/* =========================================
+   HOVER
+   ========================================= */
 
 .day-button:hover {
   transform: translateY(-2px);
@@ -560,7 +75,9 @@ footer span:last-child {
 }
 
 
-/* AKTIF */
+/* =========================================
+   TOMBOL AKTIF
+   ========================================= */
 
 .day-button.active {
   background: #163f91;
@@ -570,24 +87,35 @@ footer span:last-child {
   box-shadow: 0 5px 15px rgba(22, 63, 145, .22);
 }
 
-
-.day-button.active strong,
-.day-button.active span {
+.day-button.active strong {
   color: #ffffff;
 }
 
 
-/* LABEL HARI INI */
+/* Tanggal tombol aktif */
+
+.day-button.active span {
+  background: #ffffff;
+
+  color: #163f91;
+
+  border-color: #ffffff;
+}
+
+
+/* =========================================
+   LABEL DIPILIH
+   ========================================= */
 
 .active-label {
   position: absolute;
 
-  top: -9px;
+  top: -10px;
   left: 50%;
 
   transform: translateX(-50%);
 
-  padding: 3px 9px;
+  padding: 3px 10px;
 
   background: #d4af37;
 
@@ -603,139 +131,24 @@ footer span:last-child {
 
 
 /* =========================================
-   RESPONSIVE TABLET
+   RESPONSIVE
    ========================================= */
 
 @media (max-width: 700px) {
-
-  .content {
-    padding: 20px;
-  }
-
-
   .weekly-buttons {
     grid-template-columns: repeat(3, 1fr);
   }
-
 }
-
-
-/* =========================================
-   RESPONSIVE HP
-   ========================================= */
 
 @media (max-width: 600px) {
-
-  header {
-    padding: 18px;
-  }
-
-
-  .brand {
-    gap: 11px;
-  }
-
-
-  .round-mark {
-    width: 48px;
-    height: 48px;
-
-    font-size: 25px;
-  }
-
-
-  .brand-title {
-    font-size: 16px;
-  }
-
-
-  .brand-name {
-    font-size: 12px;
-  }
-
-
-  .brand-sub {
-    font-size: 10px;
-  }
-
-
-  .content {
-    padding: 15px;
-  }
-
-
-  .day h1 {
-    font-size: 29px;
-  }
-
-
-  .menu-caption {
-    padding: 16px;
-  }
-
-
-  .menu-caption h2 {
-    font-size: 20px;
-  }
-
-
-  .info-card {
-    padding: 16px;
-  }
-
-
-  .food-list {
-    grid-template-columns: 1fr;
-  }
-
-
-  .nutrition-table {
-    min-width: 500px;
-  }
-
-
-  footer {
-    flex-direction: column;
-
-    padding: 16px;
-
-    text-align: center;
-  }
-
-
-  footer span:last-child {
-    text-align: center;
-  }
-
-
-  .weekly-menu {
-    padding: 20px 15px;
-  }
-
-
   .weekly-buttons {
     grid-template-columns: repeat(2, 1fr);
-
-    gap: 9px;
   }
-
-
-  .day-button {
-    padding: 13px 6px;
-  }
-
 }
 
-
-/* =========================================
-   HP SANGAT KECIL
-   ========================================= */
-
 @media (max-width: 380px) {
-
   .weekly-buttons {
     grid-template-columns: 1fr;
   }
-
 }
 ```
