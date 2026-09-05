@@ -24,15 +24,18 @@ body {
 
 
 /* =========================================
-   HALAMAN
+   PAGE
    ========================================= */
 
 .page {
   width: 100%;
   max-width: 900px;
-  margin: 0 auto;
-  background: #ffffff;
   min-height: 100vh;
+
+  margin: 0 auto;
+
+  background: #ffffff;
+
   overflow: hidden;
 }
 
@@ -42,14 +45,16 @@ body {
    ========================================= */
 
 header {
-  background: #163f91;
   padding: 22px 25px;
+
+  background: #163f91;
 }
 
 
 .brand {
   display: flex;
   align-items: center;
+
   gap: 15px;
 }
 
@@ -68,6 +73,7 @@ header {
   border-radius: 50%;
 
   color: #d4af37;
+
   font-size: 31px;
 }
 
@@ -80,7 +86,7 @@ header {
 .brand-title {
   font-size: 20px;
   font-weight: 800;
-  letter-spacing: 0.5px;
+  letter-spacing: .5px;
 }
 
 
@@ -96,6 +102,7 @@ header {
   margin-top: 2px;
 
   color: #dfe7f7;
+
   font-size: 12px;
 }
 
@@ -110,7 +117,7 @@ header {
 
 
 /* =========================================
-   TANGGAL
+   DAY
    ========================================= */
 
 .day {
@@ -120,8 +127,10 @@ header {
 
 .day h1 {
   color: #163f91;
+
   font-size: 34px;
   line-height: 1.1;
+
   font-weight: 800;
 }
 
@@ -130,6 +139,7 @@ header {
   margin-top: 5px;
 
   color: #555;
+
   font-size: 16px;
 }
 
@@ -141,12 +151,13 @@ header {
   margin: 15px auto 25px;
 
   background: #d4af37;
+
   border-radius: 10px;
 }
 
 
 /* =========================================
-   FOTO MENU
+   MENU FOTO
    ========================================= */
 
 .menu-frame {
@@ -155,34 +166,39 @@ header {
   background: #ffffff;
 
   border: 1px solid #e2e6ec;
+
   border-radius: 16px;
 
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, .07);
 }
 
 
 .menu-photo {
   width: 100%;
+
   aspect-ratio: 16 / 9;
 
-  background: #e9edf3;
-
   overflow: hidden;
+
+  background: #e9edf3;
 }
 
 
 .menu-photo img {
+  display: block;
+
   width: 100%;
   height: 100%;
 
-  display: block;
-
   object-fit: cover;
+
+  transition: opacity .25s ease;
 }
 
 
 .menu-caption {
   padding: 20px;
+
   text-align: center;
 }
 
@@ -193,13 +209,15 @@ header {
   padding: 6px 13px;
 
   background: #163f91;
+
   color: #ffffff;
 
   border-radius: 50px;
 
   font-size: 11px;
   font-weight: 800;
-  letter-spacing: 0.5px;
+
+  letter-spacing: .5px;
 }
 
 
@@ -216,6 +234,7 @@ header {
   margin-top: 5px;
 
   color: #666;
+
   font-size: 14px;
 }
 
@@ -232,26 +251,27 @@ header {
   background: #ffffff;
 
   border: 1px solid #e1e5eb;
+
   border-radius: 14px;
 
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .04);
 }
 
 
 .section-title {
+  padding-bottom: 12px;
+
   color: #163f91;
+
+  border-bottom: 2px solid #edf0f4;
 
   font-size: 16px;
   font-weight: 800;
-
-  padding-bottom: 12px;
-
-  border-bottom: 2px solid #edf0f4;
 }
 
 
 /* =========================================
-   WARNING CARD
+   WARNING
    ========================================= */
 
 .warning-card {
@@ -270,6 +290,7 @@ header {
 
 .warning-list {
   margin-top: 15px;
+
   padding-left: 22px;
 }
 
@@ -314,6 +335,7 @@ header {
   background: #f7f9fc;
 
   border: 1px solid #e5e9ef;
+
   border-radius: 12px;
 }
 
@@ -357,13 +379,13 @@ header {
 
 
 /* =========================================
-   NUTRITION TABLE
+   NUTRITION
    ========================================= */
 
 .table-wrapper {
-  margin-top: 15px;
-
   width: 100%;
+
+  margin-top: 15px;
 
   overflow-x: auto;
 }
@@ -390,6 +412,7 @@ header {
 
 .nutrition-table th {
   background: #163f91;
+
   color: #ffffff;
 
   font-weight: 700;
@@ -398,6 +421,7 @@ header {
 
 .nutrition-table td:first-child {
   text-align: left;
+
   font-weight: 600;
 }
 
@@ -413,8 +437,8 @@ header {
 
 footer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 
   gap: 15px;
 
@@ -440,8 +464,6 @@ footer span:last-child {
    ========================================= */
 
 .weekly-menu {
-  margin: 0;
-
   padding: 25px;
 
   background: #f7f9fc;
@@ -472,10 +494,10 @@ footer span:last-child {
 
 
 /* =========================================
-   KARTU TANGGAL
+   TOMBOL HARI
    ========================================= */
 
-.weekly-date {
+.weekly-buttons {
   display: grid;
 
   grid-template-columns: repeat(5, 1fr);
@@ -486,12 +508,10 @@ footer span:last-child {
 }
 
 
-.weekly-day {
+.day-button {
   position: relative;
 
   padding: 15px 8px;
-
-  text-align: center;
 
   background: #ffffff;
 
@@ -499,11 +519,15 @@ footer span:last-child {
 
   border-radius: 12px;
 
-  transition: 0.2s ease;
+  cursor: pointer;
+
+  text-align: center;
+
+  transition: all .2s ease;
 }
 
 
-.weekly-day strong {
+.day-button strong {
   display: block;
 
   color: #163f91;
@@ -514,7 +538,7 @@ footer span:last-child {
 }
 
 
-.weekly-day span {
+.day-button span {
   display: block;
 
   margin-top: 4px;
@@ -525,24 +549,35 @@ footer span:last-child {
 }
 
 
-/* =========================================
-   HARI AKTIF
-   ========================================= */
+/* HOVER */
 
-.weekly-day.active-day {
+.day-button:hover {
+  transform: translateY(-2px);
+
+  border-color: #163f91;
+
+  box-shadow: 0 5px 12px rgba(0, 0, 0, .08);
+}
+
+
+/* AKTIF */
+
+.day-button.active {
   background: #163f91;
 
   border-color: #163f91;
 
-  box-shadow: 0 5px 15px rgba(22, 63, 145, 0.22);
+  box-shadow: 0 5px 15px rgba(22, 63, 145, .22);
 }
 
 
-.weekly-day.active-day strong,
-.weekly-day.active-day span {
+.day-button.active strong,
+.day-button.active span {
   color: #ffffff;
 }
 
+
+/* LABEL HARI INI */
 
 .active-label {
   position: absolute;
@@ -578,7 +613,7 @@ footer span:last-child {
   }
 
 
-  .weekly-date {
+  .weekly-buttons {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -662,9 +697,9 @@ footer span:last-child {
   footer {
     flex-direction: column;
 
-    text-align: center;
-
     padding: 16px;
+
+    text-align: center;
   }
 
 
@@ -678,14 +713,14 @@ footer span:last-child {
   }
 
 
-  .weekly-date {
+  .weekly-buttons {
     grid-template-columns: repeat(2, 1fr);
 
     gap: 9px;
   }
 
 
-  .weekly-day {
+  .day-button {
     padding: 13px 6px;
   }
 
@@ -698,13 +733,8 @@ footer span:last-child {
 
 @media (max-width: 380px) {
 
-  .weekly-date {
+  .weekly-buttons {
     grid-template-columns: 1fr;
-  }
-
-
-  .weekly-day {
-    padding: 12px;
   }
 
 }
