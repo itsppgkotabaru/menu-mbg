@@ -1,236 +1,111 @@
 <!doctype html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#163f91">
-  <title>Admin • SPPG Polres Brebes Kotabaru</title>
-  <link rel="stylesheet" href="./admin.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#163f91">
+<title>Admin • SPPG Polres Brebes Kotabaru</title>
+<link rel="stylesheet" href="./admin.css">
 </head>
-
 <body>
-  <div class="admin-page">
+<div class="admin-page">
+<header class="admin-header">
+  <div class="brand">
+    <div class="round-mark">✺</div>
+    <div>
+      <div class="brand-title">ADMIN MAKAN BERGIZI GRATIS</div>
+      <div class="brand-name">SPPG POLRES BREBES KOTABARU</div>
+      <div class="brand-sub">Yayasan Kemala Bhayangkari</div>
+    </div>
+  </div>
+  <a class="back-link" href="./index.html">← Lihat Halaman Utama</a>
+</header>
 
-    <header class="admin-header">
-      <div class="brand">
-        <div class="round-mark">✺</div>
-        <div>
-          <div class="brand-title">ADMIN MAKAN BERGIZI GRATIS</div>
-          <div class="brand-name">SPPG POLRES BREBES KOTABARU</div>
-          <div class="brand-sub">Yayasan Kemala Bhayangkari</div>
-        </div>
-      </div>
+<main class="admin-content">
+<section class="page-heading">
+  <div>
+    <p class="eyebrow">PANEL PENGELOLAAN</p>
+    <h1>Menu Mingguan</h1>
+    <p class="heading-text">Pilih hari, ubah menu, foto, dan kandungan gizi.</p>
+  </div>
+  <div id="saveStatus" class="save-status">Belum ada perubahan</div>
+</section>
 
-      <a class="back-link" href="./index.html">← Lihat Halaman Utama</a>
-    </header>
+<section class="day-tabs-card">
+  <div class="section-label">PILIH HARI</div>
+  <div class="day-tabs">
+    <button class="admin-day-button" data-day="senin" type="button"><strong>Senin</strong><span>24</span></button>
+    <button class="admin-day-button" data-day="selasa" type="button"><strong>Selasa</strong><span>25</span></button>
+    <button class="admin-day-button" data-day="rabu" type="button"><strong>Rabu</strong><span>26</span></button>
+    <button class="admin-day-button active" data-day="kamis" type="button"><strong>Kamis</strong><span>27</span></button>
+    <button class="admin-day-button" data-day="jumat" type="button"><strong>Jumat</strong><span>28</span></button>
+  </div>
+</section>
 
-    <main class="admin-content">
-
-      <section class="page-heading">
-        <div>
-          <p class="eyebrow">PANEL PENGELOLAAN</p>
-          <h1>Menu Mingguan</h1>
-          <p class="heading-text">
-            Pilih hari, ubah menu, foto, dan kandungan gizi.
-          </p>
-        </div>
-        <div id="saveStatus" class="save-status">Belum ada perubahan</div>
-      </section>
-
-      <section class="day-tabs-card">
-        <div class="section-label">PILIH HARI</div>
-        <div class="day-tabs">
-          <button class="admin-day-button" data-day="senin" type="button">
-            <strong>Senin</strong><span>24</span>
-          </button>
-          <button class="admin-day-button" data-day="selasa" type="button">
-            <strong>Selasa</strong><span>25</span>
-          </button>
-          <button class="admin-day-button" data-day="rabu" type="button">
-            <strong>Rabu</strong><span>26</span>
-          </button>
-          <button class="admin-day-button active" data-day="kamis" type="button">
-            <strong>Kamis</strong><span>27</span>
-          </button>
-          <button class="admin-day-button" data-day="jumat" type="button">
-            <strong>Jumat</strong><span>28</span>
-          </button>
-        </div>
-      </section>
-
-      <form id="menuForm" class="admin-form" autocomplete="off">
-
-        <section class="form-card">
-          <div class="card-heading">
-            <div>
-              <div class="section-label">DATA MENU</div>
-              <h2 id="selectedDayTitle">Menu Kamis</h2>
-            </div>
-            <span class="date-badge" id="selectedDateBadge">27 Agustus 2026</span>
-          </div>
-
-          <div class="form-grid">
-
-            <label class="field full">
-              <span>Hari</span>
-              <input id="hari" type="text" readonly>
-            </label>
-
-            <label class="field full">
-              <span>Tanggal lengkap</span>
-              <input id="tanggal" type="text" placeholder="27 Agustus 2026">
-            </label>
-
-            <label class="field">
-              <span>Karbohidrat</span>
-              <input id="carbohydrate" type="text" placeholder="Contoh: Nasi putih">
-            </label>
-
-            <label class="field">
-              <span>Protein Hewani</span>
-              <input id="animalProtein" type="text" placeholder="Contoh: Ayam kecap">
-            </label>
-
-            <label class="field">
-              <span>Lauk Nabati</span>
-              <input id="plantProtein" type="text" placeholder="Contoh: Tempe goreng">
-            </label>
-
-            <label class="field">
-              <span>Sayuran</span>
-              <input id="vegetable" type="text" placeholder="Contoh: Sayur sop">
-            </label>
-
-            <label class="field">
-              <span>Buah</span>
-              <input id="fruit" type="text" placeholder="Contoh: Pisang">
-            </label>
-
-            <label class="field">
-              <span>Judul Menu</span>
-              <input id="menuTitle" type="text" placeholder="Paket Makan Bergizi Gratis">
-            </label>
-
-            <label class="field full">
-              <span>Deskripsi singkat</span>
-              <input id="menuDescription" type="text" placeholder="Nasi • Lauk protein • Sayuran • Buah">
-            </label>
-
-          </div>
-        </section>
-
-        <section class="form-card">
-          <div class="card-heading">
-            <div>
-              <div class="section-label">FOTO MENU</div>
-              <h2>Foto Menu Hari Ini</h2>
-            </div>
-          </div>
-
-          <div class="photo-layout">
-            <div class="photo-preview">
-              <img id="photoPreview" src="./assets/menu-mbg.jpg" alt="Pratinjau menu">
-            </div>
-
-            <div class="photo-controls">
-              <label class="field">
-                <span>Nama/path foto</span>
-                <input id="gambar" type="text" placeholder="./assets/menu-kamis.jpg">
-              </label>
-
-              <label class="file-input">
-                <span>Pilih foto dari perangkat</span>
-                <input id="photoFile" type="file" accept="image/*">
-              </label>
-
-              <p class="help-text">
-                Foto yang dipilih di sini disimpan di browser perangkat ini.
-                Untuk website online, file foto tetap perlu diunggah ke server.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="form-card">
-          <div class="card-heading">
-            <div>
-              <div class="section-label">KANDUNGAN GIZI</div>
-              <h2>Gizi Per Porsi</h2>
-            </div>
-          </div>
-
-          <div class="nutrition-grid">
-            <div class="nutrition-head">Komponen</div>
-            <div class="nutrition-head">Porsi Kecil</div>
-            <div class="nutrition-head">Porsi Besar</div>
-
-            <div class="nutrition-name">Energi</div>
-            <input id="energySmall" type="text" placeholder="kkal">
-            <input id="energyLarge" type="text" placeholder="kkal">
-
-            <div class="nutrition-name">Protein</div>
-            <input id="proteinSmall" type="text" placeholder="g">
-            <input id="proteinLarge" type="text" placeholder="g">
-
-            <div class="nutrition-name">Lemak</div>
-            <input id="fatSmall" type="text" placeholder="g">
-            <input id="fatLarge" type="text" placeholder="g">
-
-            <div class="nutrition-name">Karbohidrat</div>
-            <input id="carbSmall" type="text" placeholder="g">
-            <input id="carbLarge" type="text" placeholder="g">
-
-            <div class="nutrition-name">Serat</div>
-            <input id="fiberSmall" type="text" placeholder="g">
-            <input id="fiberLarge" type="text" placeholder="g">
-          </div>
-        </section>
-
-        <div class="form-actions">
-          <button class="btn btn-secondary" id="resetButton" type="button">
-            ↺ Batalkan Perubahan
-          </button>
-          <button class="btn btn-primary" type="submit">
-            💾 Simpan Menu
-          </button>
-        </div>
-
-      </form>
-
-      <section class="danger-card">
-        <div>
-          <div class="section-label danger-label">DATA LOKAL</div>
-          <h2>Kelola Data Menu</h2>
-          <p>
-            Data yang disimpan dari halaman ini menggunakan localStorage.
-            Gunakan ekspor untuk membuat cadangan data.
-          </p>
-        </div>
-
-        <div class="data-actions">
-          <button id="exportButton" class="btn btn-outline" type="button">⬇ Ekspor Data</button>
-          <label class="btn btn-outline import-label">
-            ⬆ Impor Data
-            <input id="importFile" type="file" accept=".json,application/json">
-          </label>
-          <button id="clearButton" class="btn btn-danger" type="button">Hapus Data Lokal</button>
-        </div>
-      </section>
-
-      <div class="notice">
-        <strong>Catatan:</strong> halaman admin ini adalah versi frontend. Tanpa backend/database,
-        perubahan tersimpan hanya pada browser/perangkat yang digunakan. Untuk admin online yang
-        bisa digunakan beberapa perangkat, diperlukan backend, database, login, dan penyimpanan foto.
-      </div>
-
-    </main>
-
-    <footer>
-      <span>SPPG POLRES BREBES KOTABARU</span>
-      <span>Yayasan Kemala Bhayangkari</span>
-    </footer>
+<form id="menuForm" class="admin-form" autocomplete="off">
+<section class="form-card">
+  <div class="card-heading">
+    <div><div class="section-label">DATA MENU</div><h2 id="selectedDayTitle">Menu Kamis</h2></div>
+    <span class="date-badge" id="selectedDateBadge">27 Agustus 2026</span>
   </div>
 
-  <script src="./admin.js"></script>
+  <div class="form-grid">
+    <label class="field full"><span>Hari</span><input id="hari" type="text" readonly></label>
+    <label class="field full"><span>Tanggal lengkap</span><input id="tanggal" type="text" placeholder="27 Agustus 2026"></label>
+    <label class="field"><span>Karbohidrat</span><input id="carbohydrate" type="text" placeholder="Contoh: Nasi putih"></label>
+    <label class="field"><span>Protein Hewani</span><input id="animalProtein" type="text" placeholder="Contoh: Ayam kecap"></label>
+    <label class="field"><span>Lauk Nabati</span><input id="plantProtein" type="text" placeholder="Contoh: Tempe goreng"></label>
+    <label class="field"><span>Sayuran</span><input id="vegetable" type="text" placeholder="Contoh: Sayur sop"></label>
+    <label class="field"><span>Buah</span><input id="fruit" type="text" placeholder="Contoh: Pisang"></label>
+    <label class="field"><span>Judul Menu</span><input id="menuTitle" type="text" placeholder="Paket Makan Bergizi Gratis"></label>
+    <label class="field full"><span>Deskripsi singkat</span><input id="menuDescription" type="text" placeholder="Nasi • Lauk protein • Sayuran • Buah"></label>
+  </div>
+</section>
+
+<section class="form-card">
+  <div class="card-heading"><div><div class="section-label">FOTO MENU</div><h2>Foto Menu Hari Ini</h2></div></div>
+  <div class="photo-layout">
+    <div class="photo-preview"><img id="photoPreview" src="./assets/menu-mbg.jpg" alt="Pratinjau menu"></div>
+    <div class="photo-controls">
+      <label class="field"><span>Nama/path foto</span><input id="gambar" type="text" placeholder="./assets/menu-kamis.jpg"></label>
+      <label class="file-input"><span>Pilih foto dari perangkat</span><input id="photoFile" type="file" accept="image/*"></label>
+      <p class="help-text">Foto yang dipilih tersimpan di browser ini. Untuk website online multi-perangkat, diperlukan penyimpanan server.</p>
+    </div>
+  </div>
+</section>
+
+<section class="form-card">
+  <div class="card-heading"><div><div class="section-label">KANDUNGAN GIZI</div><h2>Gizi Per Porsi</h2></div></div>
+  <div class="nutrition-grid">
+    <div class="nutrition-head">Komponen</div><div class="nutrition-head">Porsi Kecil</div><div class="nutrition-head">Porsi Besar</div>
+    <div class="nutrition-name">Energi</div><input id="energySmall" type="text" placeholder="kkal"><input id="energyLarge" type="text" placeholder="kkal">
+    <div class="nutrition-name">Protein</div><input id="proteinSmall" type="text" placeholder="g"><input id="proteinLarge" type="text" placeholder="g">
+    <div class="nutrition-name">Lemak</div><input id="fatSmall" type="text" placeholder="g"><input id="fatLarge" type="text" placeholder="g">
+    <div class="nutrition-name">Karbohidrat</div><input id="carbSmall" type="text" placeholder="g"><input id="carbLarge" type="text" placeholder="g">
+    <div class="nutrition-name">Serat</div><input id="fiberSmall" type="text" placeholder="g"><input id="fiberLarge" type="text" placeholder="g">
+  </div>
+</section>
+
+<div class="form-actions">
+  <button class="btn btn-secondary" id="resetButton" type="button">↺ Batalkan Perubahan</button>
+  <button class="btn btn-primary" type="submit">💾 Simpan Menu</button>
+</div>
+</form>
+
+<section class="danger-card">
+  <div><div class="section-label danger-label">DATA MENU</div><h2>Cadangan Data</h2><p>Gunakan ekspor untuk membuat backup dan impor untuk memulihkan data.</p></div>
+  <div class="data-actions">
+    <button id="exportButton" class="btn btn-outline" type="button">⬇ Ekspor Data</button>
+    <label class="btn btn-outline import-label">⬆ Impor Data<input id="importFile" type="file" accept=".json,application/json"></label>
+    <button id="clearButton" class="btn btn-danger" type="button">Hapus Data Lokal</button>
+  </div>
+</section>
+
+<div class="notice"><strong>Catatan:</strong> versi ini terintegrasi melalui <b>localStorage</b>. Admin dan halaman utama pada browser yang sama membaca data menu yang sama.</div>
+</main>
+
+<footer><span>SPPG POLRES BREBES KOTABARU</span><span>Yayasan Kemala Bhayangkari</span></footer>
+</div>
+<script src="./admin.js"></script>
 </body>
 </html>

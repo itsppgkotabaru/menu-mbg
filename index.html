@@ -7,27 +7,22 @@
   <title>MBG • Menu Hari Ini</title>
   <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
   <div class="page">
 
-    <!-- HEADER -->
-    <header class="site-header">
+    <header>
       <div class="brand">
         <div class="round-mark">✺</div>
-
         <div class="brand-copy">
           <div class="brand-title">MAKAN BERGIZI GRATIS</div>
           <div class="brand-name">SPPG POLRES BREBES KOTABARU</div>
           <div class="brand-sub">Yayasan Kemala Bhayangkari</div>
         </div>
       </div>
+      <a class="admin-link" href="./admin.html">⚙ Admin</a>
     </header>
 
-    <!-- ISI UTAMA -->
     <main class="content">
-
-      <!-- TANGGAL -->
       <section class="day">
         <h1 id="dayName">Kamis</h1>
         <div id="dayDate">27 Agustus 2026</div>
@@ -35,17 +30,10 @@
 
       <div class="gold-line"></div>
 
-      <!-- FOTO MENU -->
       <section class="menu-frame">
         <div class="menu-photo">
-          <img
-            id="menuImage"
-            src="./assets/menu-mbg.jpg"
-            alt="Menu Makan Bergizi Gratis"
-            onerror="this.onerror=null; this.src='./assets/menu-mbg.jpg';"
-          >
+          <img id="menuImage" src="./assets/menu-mbg.jpg" alt="Menu Makan Bergizi Gratis">
         </div>
-
         <div class="menu-caption">
           <span class="pill">MENU HARI INI</span>
           <h2 id="menuTitle">Paket Makan Bergizi Gratis</h2>
@@ -53,10 +41,8 @@
         </div>
       </section>
 
-      <!-- WAJIB DIPERHATIKAN -->
       <section class="info-card warning-card">
         <div class="section-title warning-title">⚠️ WAJIB DIPERHATIKAN</div>
-
         <ol class="warning-list">
           <li>Makanan sebaiknya segera dikonsumsi setelah diterima dan jangan dibawa pulang.</li>
           <li>Periksa kondisi makanan sebelum dikonsumsi dan segera laporkan apabila terdapat makanan yang tidak sesuai.</li>
@@ -64,143 +50,51 @@
         </ol>
       </section>
 
-      <!-- ISI OMPRANG -->
       <section class="info-card">
         <div class="section-title">🍱 ISI OMPRANG HARI INI</div>
-
         <div class="food-list">
-
-          <div class="food-item">
-            <div class="food-icon">🍚</div>
-            <div>
-              <span>Karbohidrat</span>
-              <strong id="carbohydrate">Nasi</strong>
-            </div>
-          </div>
-
-          <div class="food-item">
-            <div class="food-icon">🍗</div>
-            <div>
-              <span>Protein Hewani</span>
-              <strong id="animalProtein">Menu Protein Hewani</strong>
-            </div>
-          </div>
-
-          <div class="food-item">
-            <div class="food-icon">🌱</div>
-            <div>
-              <span>Lauk Nabati</span>
-              <strong id="plantProtein">Menu Lauk Nabati</strong>
-            </div>
-          </div>
-
-          <div class="food-item">
-            <div class="food-icon">🥬</div>
-            <div>
-              <span>Sayur</span>
-              <strong id="vegetable">Sayuran</strong>
-            </div>
-          </div>
-
-          <div class="food-item">
-            <div class="food-icon">🍎</div>
-            <div>
-              <span>Buah</span>
-              <strong id="fruit">Buah</strong>
-            </div>
-          </div>
-
+          <div class="food-item"><div class="food-icon">🍚</div><div><span>Karbohidrat</span><strong id="carbohydrate">Nasi</strong></div></div>
+          <div class="food-item"><div class="food-icon">🍗</div><div><span>Protein Hewani</span><strong id="animalProtein">Menu Protein Hewani</strong></div></div>
+          <div class="food-item"><div class="food-icon">🌱</div><div><span>Lauk Nabati</span><strong id="plantProtein">Menu Lauk Nabati</strong></div></div>
+          <div class="food-item"><div class="food-icon">🥬</div><div><span>Sayur</span><strong id="vegetable">Sayuran</strong></div></div>
+          <div class="food-item"><div class="food-icon">🍎</div><div><span>Buah</span><strong id="fruit">Buah</strong></div></div>
         </div>
       </section>
 
-      <!-- KANDUNGAN GIZI -->
       <section class="info-card nutrition-card">
         <div class="section-title">📊 KANDUNGAN GIZI PER PORSI</div>
-
         <div class="table-wrapper">
           <table class="nutrition-table">
-            <thead>
-              <tr>
-                <th>Komponen Gizi</th>
-                <th>Porsi Kecil</th>
-                <th>Porsi Besar</th>
-              </tr>
-            </thead>
-
+            <thead><tr><th>Komponen Gizi</th><th>Porsi Kecil</th><th>Porsi Besar</th></tr></thead>
             <tbody>
-              <tr>
-                <td>Energi</td>
-                <td id="energySmall">— kkal</td>
-                <td id="energyLarge">— kkal</td>
-              </tr>
-              <tr>
-                <td>Protein</td>
-                <td id="proteinSmall">— g</td>
-                <td id="proteinLarge">— g</td>
-              </tr>
-              <tr>
-                <td>Lemak</td>
-                <td id="fatSmall">— g</td>
-                <td id="fatLarge">— g</td>
-              </tr>
-              <tr>
-                <td>Karbohidrat</td>
-                <td id="carbSmall">— g</td>
-                <td id="carbLarge">— g</td>
-              </tr>
-              <tr>
-                <td>Serat</td>
-                <td id="fiberSmall">— g</td>
-                <td id="fiberLarge">— g</td>
-              </tr>
+              <tr><td>Energi</td><td id="energySmall">— kkal</td><td id="energyLarge">— kkal</td></tr>
+              <tr><td>Protein</td><td id="proteinSmall">— g</td><td id="proteinLarge">— g</td></tr>
+              <tr><td>Lemak</td><td id="fatSmall">— g</td><td id="fatLarge">— g</td></tr>
+              <tr><td>Karbohidrat</td><td id="carbSmall">— g</td><td id="carbLarge">— g</td></tr>
+              <tr><td>Serat</td><td id="fiberSmall">— g</td><td id="fiberLarge">— g</td></tr>
             </tbody>
           </table>
         </div>
       </section>
-
     </main>
 
-    <!-- MENU MINGGU INI -->
     <section class="weekly-menu">
       <div class="weekly-title">📅 MENU MINGGU INI</div>
       <div class="weekly-subtitle">Pilih hari untuk melihat menu</div>
 
       <div class="weekly-buttons">
-
-        <button class="day-button" data-day="senin" type="button">
-          <strong>Senin</strong>
-          <span>24</span>
-        </button>
-
-        <button class="day-button" data-day="selasa" type="button">
-          <strong>Selasa</strong>
-          <span>25</span>
-        </button>
-
-        <button class="day-button" data-day="rabu" type="button">
-          <strong>Rabu</strong>
-          <span>26</span>
-        </button>
-
-        <button class="day-button active" data-day="kamis" type="button">
-          <strong>Kamis</strong>
-          <span>27</span>
-        </button>
-
-        <button class="day-button" data-day="jumat" type="button">
-          <strong>Jumat</strong>
-          <span>28</span>
-        </button>
-
+        <button class="day-button" data-day="senin" type="button"><strong>Senin</strong><span>24</span></button>
+        <button class="day-button" data-day="selasa" type="button"><strong>Selasa</strong><span>25</span></button>
+        <button class="day-button" data-day="rabu" type="button"><strong>Rabu</strong><span>26</span></button>
+        <button class="day-button active" data-day="kamis" type="button"><strong>Kamis</strong><span>27</span></button>
+        <button class="day-button" data-day="jumat" type="button"><strong>Jumat</strong><span>28</span></button>
       </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
       <span>SPPG POLRES BREBES KOTABARU</span>
       <span>Yayasan Kemala Bhayangkari</span>
     </footer>
-
   </div>
 
   <script src="./script.js"></script>
