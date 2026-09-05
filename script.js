@@ -1,175 +1,259 @@
-```javascript
-/* =========================================
-   DATA MENU MINGGU INI
-   ========================================= */
+/* =================================
+   DATA MENU
+   ================================= */
 
 const menuData = {
 
   senin: {
+
     hari: "Senin",
     tanggal: "24 Agustus 2026",
 
     gambar: "assets/menu-senin.jpg",
 
     judul: "Paket Makan Bergizi Gratis",
-    deskripsi: "Nasi • Lauk protein • Sayuran • Buah",
 
-    karbohidrat: "Nasi",
-    proteinHewani: "Menu Protein Hewani",
-    laukNabati: "Menu Lauk Nabati",
-    sayur: "Sayuran",
-    buah: "Buah",
+    deskripsi:
+      "Nasi • Lauk protein • Sayuran • Buah",
 
-    energiKecil: "— kkal",
-    energiBesar: "— kkal",
+    carbohydrate:
+      "Nasi",
 
-    proteinKecil: "— g",
-    proteinBesar: "— g",
+    animalProtein:
+      "Menu Protein Hewani Senin",
 
-    lemakKecil: "— g",
-    lemakBesar: "— g",
+    plantProtein:
+      "Menu Lauk Nabati Senin",
 
-    karboKecil: "— g",
-    karboBesar: "— g",
+    vegetable:
+      "Sayuran Senin",
 
-    seratKecil: "— g",
-    seratBesar: "— g"
+    fruit:
+      "Buah Senin",
+
+    gizi: {
+
+      energiKecil: "— kkal",
+      energiBesar: "— kkal",
+
+      proteinKecil: "— g",
+      proteinBesar: "— g",
+
+      lemakKecil: "— g",
+      lemakBesar: "— g",
+
+      karboKecil: "— g",
+      karboBesar: "— g",
+
+      seratKecil: "— g",
+      seratBesar: "— g"
+
+    }
+
   },
 
 
   selasa: {
+
     hari: "Selasa",
     tanggal: "25 Agustus 2026",
 
     gambar: "assets/menu-selasa.jpg",
 
     judul: "Paket Makan Bergizi Gratis",
-    deskripsi: "Nasi • Lauk protein • Sayuran • Buah",
 
-    karbohidrat: "Nasi",
-    proteinHewani: "Menu Protein Hewani",
-    laukNabati: "Menu Lauk Nabati",
-    sayur: "Sayuran",
-    buah: "Buah",
+    deskripsi:
+      "Nasi • Lauk protein • Sayuran • Buah",
 
-    energiKecil: "— kkal",
-    energiBesar: "— kkal",
+    carbohydrate:
+      "Nasi",
 
-    proteinKecil: "— g",
-    proteinBesar: "— g",
+    animalProtein:
+      "Menu Protein Hewani Selasa",
 
-    lemakKecil: "— g",
-    lemakBesar: "— g",
+    plantProtein:
+      "Menu Lauk Nabati Selasa",
 
-    karboKecil: "— g",
-    karboBesar: "— g",
+    vegetable:
+      "Sayuran Selasa",
 
-    seratKecil: "— g",
-    seratBesar: "— g"
+    fruit:
+      "Buah Selasa",
+
+    gizi: {
+
+      energiKecil: "— kkal",
+      energiBesar: "— kkal",
+
+      proteinKecil: "— g",
+      proteinBesar: "— g",
+
+      lemakKecil: "— g",
+      lemakBesar: "— g",
+
+      karboKecil: "— g",
+      karboBesar: "— g",
+
+      seratKecil: "— g",
+      seratBesar: "— g"
+
+    }
+
   },
 
 
   rabu: {
+
     hari: "Rabu",
     tanggal: "26 Agustus 2026",
 
     gambar: "assets/menu-rabu.jpg",
 
     judul: "Paket Makan Bergizi Gratis",
-    deskripsi: "Nasi • Lauk protein • Sayuran • Buah",
 
-    karbohidrat: "Nasi",
-    proteinHewani: "Menu Protein Hewani",
-    laukNabati: "Menu Lauk Nabati",
-    sayur: "Sayuran",
-    buah: "Buah",
+    deskripsi:
+      "Nasi • Lauk protein • Sayuran • Buah",
 
-    energiKecil: "— kkal",
-    energiBesar: "— kkal",
+    carbohydrate:
+      "Nasi",
 
-    proteinKecil: "— g",
-    proteinBesar: "— g",
+    animalProtein:
+      "Menu Protein Hewani Rabu",
 
-    lemakKecil: "— g",
-    lemakBesar: "— g",
+    plantProtein:
+      "Menu Lauk Nabati Rabu",
 
-    karboKecil: "— g",
-    karboBesar: "— g",
+    vegetable:
+      "Sayuran Rabu",
 
-    seratKecil: "— g",
-    seratBesar: "— g"
+    fruit:
+      "Buah Rabu",
+
+    gizi: {
+
+      energiKecil: "— kkal",
+      energiBesar: "— kkal",
+
+      proteinKecil: "— g",
+      proteinBesar: "— g",
+
+      lemakKecil: "— g",
+      lemakBesar: "— g",
+
+      karboKecil: "— g",
+      karboBesar: "— g",
+
+      seratKecil: "— g",
+      seratBesar: "— g"
+
+    }
+
   },
 
 
   kamis: {
+
     hari: "Kamis",
     tanggal: "27 Agustus 2026",
 
-    gambar: "assets/menu-kamis.jpg",
+    gambar: "assets/menu-mbg.jpg",
 
     judul: "Paket Makan Bergizi Gratis",
-    deskripsi: "Nasi • Lauk protein • Sayuran • Buah",
 
-    karbohidrat: "Nasi",
-    proteinHewani: "Menu Protein Hewani",
-    laukNabati: "Menu Lauk Nabati",
-    sayur: "Sayuran",
-    buah: "Buah",
+    deskripsi:
+      "Nasi • Lauk protein • Sayuran • Buah",
 
-    energiKecil: "— kkal",
-    energiBesar: "— kkal",
+    carbohydrate:
+      "Nasi",
 
-    proteinKecil: "— g",
-    proteinBesar: "— g",
+    animalProtein:
+      "Menu Protein Hewani",
 
-    lemakKecil: "— g",
-    lemakBesar: "— g",
+    plantProtein:
+      "Menu Lauk Nabati",
 
-    karboKecil: "— g",
-    karboBesar: "— g",
+    vegetable:
+      "Sayuran",
 
-    seratKecil: "— g",
-    seratBesar: "— g"
+    fruit:
+      "Buah",
+
+    gizi: {
+
+      energiKecil: "— kkal",
+      energiBesar: "— kkal",
+
+      proteinKecil: "— g",
+      proteinBesar: "— g",
+
+      lemakKecil: "— g",
+      lemakBesar: "— g",
+
+      karboKecil: "— g",
+      karboBesar: "— g",
+
+      seratKecil: "— g",
+      seratBesar: "— g"
+
+    }
+
   },
 
 
   jumat: {
+
     hari: "Jumat",
     tanggal: "28 Agustus 2026",
 
     gambar: "assets/menu-jumat.jpg",
 
     judul: "Paket Makan Bergizi Gratis",
-    deskripsi: "Nasi • Lauk protein • Sayuran • Buah",
 
-    karbohidrat: "Nasi",
-    proteinHewani: "Menu Protein Hewani",
-    laukNabati: "Menu Lauk Nabati",
-    sayur: "Sayuran",
-    buah: "Buah",
+    deskripsi:
+      "Nasi • Lauk protein • Sayuran • Buah",
 
-    energiKecil: "— kkal",
-    energiBesar: "— kkal",
+    carbohydrate:
+      "Nasi",
 
-    proteinKecil: "— g",
-    proteinBesar: "— g",
+    animalProtein:
+      "Menu Protein Hewani Jumat",
 
-    lemakKecil: "— g",
-    lemakBesar: "— g",
+    plantProtein:
+      "Menu Lauk Nabati Jumat",
 
-    karboKecil: "— g",
-    karboBesar: "— g",
+    vegetable:
+      "Sayuran Jumat",
 
-    seratKecil: "— g",
-    seratBesar: "— g"
+    fruit:
+      "Buah Jumat",
+
+    gizi: {
+
+      energiKecil: "— kkal",
+      energiBesar: "— kkal",
+
+      proteinKecil: "— g",
+      proteinBesar: "— g",
+
+      lemakKecil: "— g",
+      lemakBesar: "— g",
+
+      karboKecil: "— g",
+      karboBesar: "— g",
+
+      seratKecil: "— g",
+      seratBesar: "— g"
+
+    }
+
   }
 
 };
 
 
-/* =========================================
-   FUNGSI UNTUK MENAMPILKAN MENU
-   ========================================= */
+/* =================================
+   FUNGSI MENAMPILKAN MENU
+   ================================= */
 
 function tampilkanMenu(hari) {
 
@@ -180,9 +264,9 @@ function tampilkanMenu(hari) {
   }
 
 
-  /* ================================
-     HARI DAN TANGGAL
-     ================================ */
+  /* ===============================
+     TANGGAL
+     =============================== */
 
   document.getElementById("dayName").textContent =
     menu.hari;
@@ -191,124 +275,102 @@ function tampilkanMenu(hari) {
     menu.tanggal;
 
 
-  /* ================================
+  /* ===============================
      FOTO
-     ================================ */
+     =============================== */
 
-  const image = document.getElementById("menuImage");
+  const menuImage =
+    document.getElementById("menuImage");
 
-  image.style.opacity = "0";
+  menuImage.src =
+    menu.gambar;
 
-  setTimeout(function () {
-
-    image.src = menu.gambar;
-
-    image.alt =
-      "Menu Makan Bergizi Gratis " + menu.hari;
-
-    image.onload = function () {
-      image.style.opacity = "1";
-    };
-
-    /*
-     * Jika gambar tidak ditemukan,
-     * tetap tampilkan kembali gambarnya.
-     */
-    image.onerror = function () {
-      image.style.opacity = "1";
-    };
-
-  }, 150);
+  menuImage.alt =
+    "Menu Makan Bergizi Gratis " + menu.hari;
 
 
-  /* ================================
-     JUDUL DAN DESKRIPSI
-     ================================ */
+  /* ===============================
+     JUDUL
+     =============================== */
 
   document.getElementById("menuTitle").textContent =
     menu.judul;
+
 
   document.getElementById("menuDescription").textContent =
     menu.deskripsi;
 
 
-  /* ================================
+  /* ===============================
      ISI OMPRANG
-     ================================ */
+     =============================== */
 
   document.getElementById("carbohydrate").textContent =
-    menu.karbohidrat;
+    menu.carbohydrate;
 
   document.getElementById("animalProtein").textContent =
-    menu.proteinHewani;
+    menu.animalProtein;
 
   document.getElementById("plantProtein").textContent =
-    menu.laukNabati;
+    menu.plantProtein;
 
   document.getElementById("vegetable").textContent =
-    menu.sayur;
+    menu.vegetable;
 
   document.getElementById("fruit").textContent =
-    menu.buah;
+    menu.fruit;
 
 
-  /* ================================
+  /* ===============================
      KANDUNGAN GIZI
-     ================================ */
+     =============================== */
 
   document.getElementById("energySmall").textContent =
-    menu.energiKecil;
+    menu.gizi.energiKecil;
 
   document.getElementById("energyLarge").textContent =
-    menu.energiBesar;
+    menu.gizi.energiBesar;
 
 
   document.getElementById("proteinSmall").textContent =
-    menu.proteinKecil;
+    menu.gizi.proteinKecil;
 
   document.getElementById("proteinLarge").textContent =
-    menu.proteinBesar;
+    menu.gizi.proteinBesar;
 
 
   document.getElementById("fatSmall").textContent =
-    menu.lemakKecil;
+    menu.gizi.lemakKecil;
 
   document.getElementById("fatLarge").textContent =
-    menu.lemakBesar;
+    menu.gizi.lemakBesar;
 
 
   document.getElementById("carbSmall").textContent =
-    menu.karboKecil;
+    menu.gizi.karboKecil;
 
   document.getElementById("carbLarge").textContent =
-    menu.karboBesar;
+    menu.gizi.karboBesar;
 
 
   document.getElementById("fiberSmall").textContent =
-    menu.seratKecil;
+    menu.gizi.seratKecil;
 
   document.getElementById("fiberLarge").textContent =
-    menu.seratBesar;
+    menu.gizi.seratBesar;
 
 
-  /* ================================
+  /* ===============================
      TOMBOL AKTIF
-     ================================ */
+     =============================== */
 
   const buttons =
     document.querySelectorAll(".day-button");
 
 
-  buttons.forEach(function (button) {
+  buttons.forEach(button => {
 
     button.classList.remove("active");
-
-    const label =
-      button.querySelector(".active-label");
-
-    if (label) {
-      label.remove();
-    }
 
   });
 
@@ -323,49 +385,42 @@ function tampilkanMenu(hari) {
 
     activeButton.classList.add("active");
 
-    const label =
-      document.createElement("div");
-
-    label.className = "active-label";
-
-    label.textContent = "DIPILIH";
-
-    activeButton.prepend(label);
   }
 
 }
 
 
-/* =========================================
-   EVENT TOMBOL
-   ========================================= */
+/* =================================
+   EVENT CLICK TOMBOL
+   ================================= */
 
-document.querySelectorAll(".day-button")
-  .forEach(function (button) {
+document.querySelectorAll(".day-button").forEach(button => {
 
-    button.addEventListener("click", function () {
+  button.addEventListener("click", function () {
 
-      const hari =
-        this.getAttribute("data-day");
+    const hari =
+      this.getAttribute("data-day");
 
-      tampilkanMenu(hari);
+    tampilkanMenu(hari);
 
 
-      /* Scroll kembali ke menu utama */
+    /* Scroll ke bagian menu utama */
 
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
+    window.scrollTo({
+
+      top: 0,
+
+      behavior: "smooth"
 
     });
 
   });
 
+});
 
-/* =========================================
+
+/* =================================
    MENU DEFAULT
-   ========================================= */
+   ================================= */
 
 tampilkanMenu("kamis");
-```
