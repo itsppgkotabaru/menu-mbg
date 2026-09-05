@@ -1,10 +1,10 @@
-```html
 <!doctype html>
 <html lang="id">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
   <meta name="theme-color" content="#163f91">
 
   <title>MBG • Menu Hari Ini</title>
@@ -12,13 +12,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
   <div class="page">
 
-    <!-- ================================
-         HEADER / LOGO DAN NAMA SPPG
-         ================================ -->
+    <!-- =================================
+         HEADER
+         ================================= -->
     <header>
 
       <div class="brand">
@@ -48,17 +49,20 @@
     </header>
 
 
-    <!-- ================================
+    <!-- =================================
          ISI UTAMA
-         ================================ -->
+         ================================= -->
     <main class="content">
+
 
       <!-- TANGGAL -->
       <section class="day">
 
-        <h1>Kamis</h1>
+        <h1 id="dayName">
+          Kamis
+        </h1>
 
-        <div>
+        <div id="dayDate">
           27 Agustus 2026
         </div>
 
@@ -68,14 +72,15 @@
       <div class="gold-line"></div>
 
 
-      <!-- ================================
+      <!-- =================================
            FOTO MENU
-           ================================ -->
+           ================================= -->
       <section class="menu-frame">
 
         <div class="menu-photo">
 
           <img
+            id="menuImage"
             src="assets/menu-mbg.jpg"
             alt="Menu Makan Bergizi Gratis">
 
@@ -88,11 +93,11 @@
             MENU HARI INI
           </span>
 
-          <h2>
+          <h2 id="menuTitle">
             Paket Makan Bergizi Gratis
           </h2>
 
-          <p>
+          <p id="menuDescription">
             Nasi • Lauk protein • Sayuran • Buah
           </p>
 
@@ -101,9 +106,9 @@
       </section>
 
 
-      <!-- ================================
+      <!-- =================================
            WAJIB DIPERHATIKAN
-           ================================ -->
+           ================================= -->
       <section class="info-card warning-card">
 
         <div class="section-title warning-title">
@@ -132,9 +137,9 @@
       </section>
 
 
-      <!-- ================================
+      <!-- =================================
            ISI OMPRANG
-           ================================ -->
+           ================================= -->
       <section class="info-card">
 
         <div class="section-title">
@@ -144,6 +149,7 @@
 
         <div class="food-list">
 
+
           <!-- KARBOHIDRAT -->
           <div class="food-item">
 
@@ -152,8 +158,13 @@
             </div>
 
             <div>
-              <span>Karbohidrat</span>
-              <strong>Nasi</strong>
+              <span>
+                Karbohidrat
+              </span>
+
+              <strong id="carbohydrate">
+                Nasi
+              </strong>
             </div>
 
           </div>
@@ -167,8 +178,13 @@
             </div>
 
             <div>
-              <span>Protein Hewani</span>
-              <strong>Menu Protein Hewani</strong>
+              <span>
+                Protein Hewani
+              </span>
+
+              <strong id="animalProtein">
+                Menu Protein Hewani
+              </strong>
             </div>
 
           </div>
@@ -182,8 +198,13 @@
             </div>
 
             <div>
-              <span>Lauk Nabati</span>
-              <strong>Menu Lauk Nabati</strong>
+              <span>
+                Lauk Nabati
+              </span>
+
+              <strong id="plantProtein">
+                Menu Lauk Nabati
+              </strong>
             </div>
 
           </div>
@@ -197,8 +218,13 @@
             </div>
 
             <div>
-              <span>Sayur</span>
-              <strong>Sayuran</strong>
+              <span>
+                Sayur
+              </span>
+
+              <strong id="vegetable">
+                Sayuran
+              </strong>
             </div>
 
           </div>
@@ -212,20 +238,26 @@
             </div>
 
             <div>
-              <span>Buah</span>
-              <strong>Buah</strong>
+              <span>
+                Buah
+              </span>
+
+              <strong id="fruit">
+                Buah
+              </strong>
             </div>
 
           </div>
+
 
         </div>
 
       </section>
 
 
-      <!-- ================================
+      <!-- =================================
            KANDUNGAN GIZI
-           ================================ -->
+           ================================= -->
       <section class="info-card nutrition-card">
 
         <div class="section-title">
@@ -240,9 +272,19 @@
             <thead>
 
               <tr>
-                <th>Komponen Gizi</th>
-                <th>Porsi Kecil</th>
-                <th>Porsi Besar</th>
+
+                <th>
+                  Komponen Gizi
+                </th>
+
+                <th>
+                  Porsi Kecil
+                </th>
+
+                <th>
+                  Porsi Besar
+                </th>
+
               </tr>
 
             </thead>
@@ -251,33 +293,87 @@
             <tbody>
 
               <tr>
-                <td>Energi</td>
-                <td>— kkal</td>
-                <td>— kkal</td>
+
+                <td>
+                  Energi
+                </td>
+
+                <td id="energySmall">
+                  — kkal
+                </td>
+
+                <td id="energyLarge">
+                  — kkal
+                </td>
+
               </tr>
 
-              <tr>
-                <td>Protein</td>
-                <td>— g</td>
-                <td>— g</td>
-              </tr>
 
               <tr>
-                <td>Lemak</td>
-                <td>— g</td>
-                <td>— g</td>
+
+                <td>
+                  Protein
+                </td>
+
+                <td id="proteinSmall">
+                  — g
+                </td>
+
+                <td id="proteinLarge">
+                  — g
+                </td>
+
               </tr>
 
-              <tr>
-                <td>Karbohidrat</td>
-                <td>— g</td>
-                <td>— g</td>
-              </tr>
 
               <tr>
-                <td>Serat</td>
-                <td>— g</td>
-                <td>— g</td>
+
+                <td>
+                  Lemak
+                </td>
+
+                <td id="fatSmall">
+                  — g
+                </td>
+
+                <td id="fatLarge">
+                  — g
+                </td>
+
+              </tr>
+
+
+              <tr>
+
+                <td>
+                  Karbohidrat
+                </td>
+
+                <td id="carbSmall">
+                  — g
+                </td>
+
+                <td id="carbLarge">
+                  — g
+                </td>
+
+              </tr>
+
+
+              <tr>
+
+                <td>
+                  Serat
+                </td>
+
+                <td id="fiberSmall">
+                  — g
+                </td>
+
+                <td id="fiberLarge">
+                  — g
+                </td>
+
               </tr>
 
             </tbody>
@@ -288,55 +384,116 @@
 
       </section>
 
+
     </main>
 
 
- 
-
-     <!-- ================================
+    <!-- =================================
          MENU MINGGU INI
-         ================================ -->
+         ================================= -->
     <section class="weekly-menu">
 
       <div class="weekly-title">
         📅 MENU MINGGU INI
       </div>
 
+
       <div class="weekly-buttons">
 
-        <button class="day-button" data-day="senin" type="button">
-          <strong>Senin</strong>
-          <span>24</span>
+
+        <!-- SENIN -->
+        <button
+          class="day-button"
+          data-day="senin"
+          type="button">
+
+          <strong>
+            Senin
+          </strong>
+
+          <span>
+            24
+          </span>
+
         </button>
 
-        <button class="day-button" data-day="selasa" type="button">
-          <strong>Selasa</strong>
-          <span>25</span>
+
+        <!-- SELASA -->
+        <button
+          class="day-button"
+          data-day="selasa"
+          type="button">
+
+          <strong>
+            Selasa
+          </strong>
+
+          <span>
+            25
+          </span>
+
         </button>
 
-        <button class="day-button" data-day="rabu" type="button">
-          <strong>Rabu</strong>
-          <span>26</span>
+
+        <!-- RABU -->
+        <button
+          class="day-button"
+          data-day="rabu"
+          type="button">
+
+          <strong>
+            Rabu
+          </strong>
+
+          <span>
+            26
+          </span>
+
         </button>
 
-        <button class="day-button active" data-day="kamis" type="button">
-          <strong>Kamis</strong>
-          <span>27</span>
+
+        <!-- KAMIS -->
+        <button
+          class="day-button active"
+          data-day="kamis"
+          type="button">
+
+          <strong>
+            Kamis
+          </strong>
+
+          <span>
+            27
+          </span>
+
         </button>
 
-        <button class="day-button" data-day="jumat" type="button">
-          <strong>Jumat</strong>
-          <span>28</span>
+
+        <!-- JUMAT -->
+        <button
+          class="day-button"
+          data-day="jumat"
+          type="button">
+
+          <strong>
+            Jumat
+          </strong>
+
+          <span>
+            28
+          </span>
+
         </button>
+
 
       </div>
 
     </section>
 
 
-    <!-- ================================
+    <!-- =================================
          FOOTER
-         ================================ -->
+         ================================= -->
     <footer>
 
       <span>
@@ -352,26 +509,12 @@
 
   </div>
 
-  <!-- JAVASCRIPT -->
+
+  <!-- =================================
+       JAVASCRIPT
+       ================================= -->
   <script src="script.js"></script>
 
 </body>
+
 </html>
-   <!-- ================================
-         FOOTER
-         ================================ -->
-    <footer>
-
-      <span>
-        SPPG POLRES BREBES KOTABARU
-      </span>
-
-      <span>
-        Yayasan Kemala Bhayangkari
-      </span>
-
-    </footer>
-
-</body>
-</html>
-```
