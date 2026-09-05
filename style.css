@@ -1,64 +1,110 @@
 ```css
+.weekly-menu {
+  padding: 25px;
+
+  background: #f7f9fc;
+
+  border-top: 4px solid #d4af37;
+}
+
+.weekly-title {
+  text-align: center;
+
+  color: #163f91;
+
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.weekly-subtitle {
+  margin-top: 4px;
+
+  text-align: center;
+
+  color: #777;
+
+  font-size: 13px;
+}
+
+
 /* =========================================
-   TOMBOL MENU MINGGU
+   BARIS HARI
    ========================================= */
 
 .weekly-buttons {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  display: flex;
+
+  gap: 12px;
+
   margin-top: 20px;
+
+  overflow-x: auto;
+
+  padding: 10px 5px 12px;
+
+  scrollbar-width: thin;
 }
+
+
+/* =========================================
+   KOTAK HARI
+   ========================================= */
 
 .day-button {
   position: relative;
 
-  padding: 14px 8px 10px;
+  flex: 0 0 120px;
+
+  width: 120px;
+  height: 120px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
 
   background: #ffffff;
-  border: 1px solid #dfe4eb;
+
+  border: 2px solid #dfe4eb;
+
   border-radius: 12px;
 
   cursor: pointer;
+
   text-align: center;
 
   transition: all .2s ease;
 }
 
+
+/* HARI */
+
 .day-button strong {
   display: block;
 
-  margin-bottom: 10px;
-
   color: #163f91;
 
-  font-size: 15px;
+  font-size: 16px;
+
   font-weight: 800;
 }
 
 
-/* =========================================
-   TANGGAL DALAM KOTAK MEMANJANG
-   ========================================= */
+/* TANGGAL */
 
 .day-button span {
   display: block;
 
-  width: 100%;
+  margin-top: 8px;
 
-  padding: 7px 5px;
+  color: #163f91;
 
-  background: #f1f4f8;
+  font-size: 28px;
 
-  color: #555;
-
-  border: 1px solid #e1e6ed;
-  border-radius: 7px;
-
-  font-size: 11px;
-  font-weight: 600;
-
-  white-space: nowrap;
+  font-weight: 800;
 }
 
 
@@ -67,16 +113,16 @@
    ========================================= */
 
 .day-button:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 
   border-color: #163f91;
 
-  box-shadow: 0 5px 12px rgba(0, 0, 0, .08);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, .10);
 }
 
 
 /* =========================================
-   TOMBOL AKTIF
+   HARI YANG DIPILIH
    ========================================= */
 
 .day-button.active {
@@ -84,38 +130,29 @@
 
   border-color: #163f91;
 
-  box-shadow: 0 5px 15px rgba(22, 63, 145, .22);
+  box-shadow: 0 6px 18px rgba(22, 63, 145, .25);
 }
 
-.day-button.active strong {
+.day-button.active strong,
+.day-button.active span {
   color: #ffffff;
 }
 
 
-/* Tanggal tombol aktif */
-
-.day-button.active span {
-  background: #ffffff;
-
-  color: #163f91;
-
-  border-color: #ffffff;
-}
-
-
 /* =========================================
-   LABEL DIPILIH
+   LABEL HARI INI
    ========================================= */
 
 .active-label {
   position: absolute;
 
   top: -10px;
+
   left: 50%;
 
   transform: translateX(-50%);
 
-  padding: 3px 10px;
+  padding: 4px 10px;
 
   background: #d4af37;
 
@@ -124,6 +161,7 @@
   border-radius: 20px;
 
   font-size: 9px;
+
   font-weight: 800;
 
   white-space: nowrap;
@@ -131,24 +169,38 @@
 
 
 /* =========================================
-   RESPONSIVE
+   HP
    ========================================= */
 
-@media (max-width: 700px) {
-  .weekly-buttons {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 @media (max-width: 600px) {
-  .weekly-buttons {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media (max-width: 380px) {
+  .weekly-menu {
+    padding: 20px 12px;
+  }
+
   .weekly-buttons {
-    grid-template-columns: 1fr;
+    gap: 10px;
+
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+  }
+
+  .day-button {
+    flex: 0 0 105px;
+
+    width: 105px;
+    height: 105px;
+
+    scroll-snap-align: start;
+  }
+
+  .day-button strong {
+    font-size: 14px;
+  }
+
+  .day-button span {
+    font-size: 25px;
   }
 }
 ```
